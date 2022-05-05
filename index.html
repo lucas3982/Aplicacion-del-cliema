@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:ital@0;1&family=Playfair+Display&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Aplicacion del tiempo</title>
+</head>
+<body onload="onLoad()">
+    
+<div class="img-body">
+    <h1>Tiempo en nuestra cuidad</h1>
+    <div id="container">
+        <div class="block">
+            <div id="location"></div>
+            <div id="date"></div>
+            <div id="description"></div>
+        </div>
+
+        <div class="block">
+            <div class="information-container">
+                Temperature in °C:
+                <div class="info" id="temperature"></div>
+            </div>
+            <div class="information-container">
+                Pressure in hPa:
+                <div class="info" id="pressure"></div>
+            </div>
+            <div class="information-container">
+                Humidity in %:
+                <div class="info" id="humidity"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div id="loader" class="loader">Loading...</div>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
